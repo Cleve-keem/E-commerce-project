@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav-container">
+      <div class="nav-left-section">
+        <button class="menu-btn">
+          <img src="images/icon-menu.svg" alt="menu" class="open-menu hidden">
+        </button>
+        <img src="images/logo.svg" alt="logo">
+        <div class="overlay"></div>
+        <ul class="nav-items">
+          <li>
+            <img src="images/icon-close.svg" alt="close" class="close-menu hidden">
+          </li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="nav-right-section">
+        <!-- cart button wrapper -->
+        <div class="cart-container">
+          <button class="cart-btn">
+            <span class="cart-indicator"></span>
+            <img src="images/icon-cart.svg" alt="cart" class="cart">
+          </button>
+          <div class="cart-message-box invisible">
+            <p class="cart-heading">Cart</p>
+            <div class="divider"></div>
+            <div class="cart-content empty">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+          <!-- <div class="cart-message-box visible"></div> -->
+        </div>
+        <img src="images/image-avatar.png" alt="avater" class="avater">
+      </div>
+    </div>
+    <section class="hero-section">
+      <div class="img-section">
+        <img src="images/image-product-1.jpg" alt="product" class="main-thumbnail invisible-mob">
+        <div class="mobile-thumnails hidden">
+          <img src="images/image-product-1.jpg" alt="product" class="thumb-mob">
+          <button><img id="next" src="images/icon-next.svg" alt="next icon"></button>
+          <button><img id="previous" src="images/icon-previous.svg" alt="previous icon"></button>
+        </div>
+        <div class="preview invisible-mob">
+          <img src="images/image-product-1-thumbnail.jpg" alt="products" class="selected">
+          <img src="images/image-product-2-thumbnail.jpg" alt="products">
+          <img src="images/image-product-3-thumbnail.jpg" alt="products">
+          <img src="images/image-product-4-thumbnail.jpg" alt="products">
+        </div>
+      </div>
+      <div class="hero-description">
+        <h3>Sneaker Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <div class="description-contest">
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        </div>
+        <div class="price-box">
+          <div class="new-price">
+            <span class="now">$125.00</span>
+            <span class="percent">50%</span>
+          </div>
+          <span class="old-price">$250.00</span>
+        </div>
+        <div class="buttons">
+          <div class="amount-btn">
+            <button id="minus"><img src="images/icon-minus.svg" alt="mius icon"></button>
+            <span class="amount">0</span>
+            <button id="plus"><img src="images/icon-plus.svg" alt="plus icon"></button>
+          </div>
+          <button class="add-btn"><img src="images/icon-cart.svg" alt="cart icon">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </div>
+      <!-- lightBox design -->
+  <div class="light-box invisible">
+    <div class="lightbox-container">
+      <button class="close-lightbox"><img src="images/icon-close.svg" alt="close icon" class="close-icon"></button>
+      <img src="images/image-product-1.jpg" alt="products" class="main-thumbnail invisible-mob">
+      <div class="preview">
+        <img src="images/image-product-1-thumbnail.jpg" alt="products" class="selected">
+        <img src="images/image-product-2-thumbnail.jpg" alt="products">
+        <img src="images/image-product-3-thumbnail.jpg" alt="products">
+        <img src="images/image-product-4-thumbnail.jpg" alt="products">
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
