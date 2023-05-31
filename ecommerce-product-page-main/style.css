@@ -463,6 +463,7 @@ span.percent{
         cursor: pointer;
         z-index: 990;
         width: 20px;
+        align-items: center;
     }
     .hero-section{
         flex-direction: column;
