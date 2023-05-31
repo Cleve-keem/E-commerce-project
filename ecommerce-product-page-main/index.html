@@ -15,12 +15,12 @@
     <div class="nav-container">
       <div class="nav-left-section">
         <button class="menu-btn">
-          <img src="images/icon-menu.svg" alt="menu" class="open-menu hidden">
+         <img src="images/icon-menu.svg" alt="menu" class="open-menu hidden">
         </button>
         <img src="images/logo.svg" alt="logo">
         <div class="overlay"></div>
-        <img src="images/icon-close.svg" alt="close" class="close-menu hidden">
         <ul class="nav-items">
+          <img src="images/icon-close.svg" alt="close" class="close-menu hidden">
           <li><a href="#">Collections</a></li>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
@@ -51,12 +51,12 @@
     <section class="hero-section">
       <div class="img-section">
         <img src="images/image-product-1.jpg" alt="product" class="main-thumbnail invisible-mob">
-        <div class="mobile-thumnails hidden">
+        <div class="mobile-thumbnail ">
           <img src="images/image-product-1.jpg" alt="product" class="thumb-mob">
-          <button><img id="next" src="images/icon-next.svg" alt="next icon"></button>
-          <button><img id="previous" src="images/icon-previous.svg" alt="previous icon"></button>
+          <button id="next"><img src="images/icon-next.svg" alt="next icon"></button>
+          <button id="previous"><img src="images/icon-previous.svg" alt="previous icon"></button>
         </div>
-        <div class="preview invisible-mob">
+        <div class="preview">
           <img src="images/image-product-1-thumbnail.jpg" alt="products" class="selected">
           <img src="images/image-product-2-thumbnail.jpg" alt="products">
           <img src="images/image-product-3-thumbnail.jpg" alt="products">
@@ -78,9 +78,13 @@
         </div>
         <div class="buttons">
           <div class="amount-btn">
-            <button id="minus"><img src="images/icon-minus.svg" alt="mius icon"></button>
+            <button id="minus">
+              <img src="images/icon-minus.svg" alt="mius icon" class="minus">
+            </button>
             <span class="amount">0</span>
-            <button id="plus"><img src="images/icon-plus.svg" alt="plus icon"></button>
+            <button id="plus">
+              <img src="images/icon-plus.svg" alt="plus icon" class="minus">
+            </button>
           </div>
           <button class="add-btn"><img src="images/icon-cart.svg" alt="cart icon">Add to cart</button>
         </div>
