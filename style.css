@@ -393,6 +393,10 @@ span.percent{
     }
     .nav-container{
         padding-inline: 1rem;
+        /* position: fixed; */
+        /* top: 0; */
+        z-index: 1000;
+        background-color: var(--white);
     }
     
     .nav-items{
@@ -534,5 +538,8 @@ span.percent{
         text-align: center;
         cursor: pointer;
         z-index: 10;
+    }
+    #next img, #previous img{
+        width: 30%;
     }
 }
