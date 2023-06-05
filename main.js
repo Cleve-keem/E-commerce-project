@@ -24,9 +24,23 @@ let amountValue = 0;
 let currentImg = 1;
 
 indicator.style.display = "none";
+
 function openMenu() {
     Menu.classList.add("active");
     overlay.classList.add("active");
 }
-
+function closeMenu() {
+    Menu.classList.remove("acttive");
+    overlay.classList.remove("active");
+}
+function handlePlus() {
+    amountValue++;
+    amount.innerText = amountValue;
+}
+function handdleMinus() {
+    if (amountValue > 0){
+        amountValue--;
+    }
+    amount.innerText = amountValue;
+}
 

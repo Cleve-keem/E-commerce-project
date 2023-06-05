@@ -53,7 +53,7 @@
         <img src="images/image-product-1.jpg" alt="product" class="main-thumbnail invisible-mob">
         <div class="mobile-thumbnail ">
           <img src="images/image-product-1.jpg" alt="product" class="thumb-mob">
-          <button id="next"><img src="images/icon-next.svg" alt="next icon"></button>
+          <button id="next" onclick=""><img src="images/icon-next.svg" alt="next icon"></button>
           <button id="previous"><img src="images/icon-previous.svg" alt="previous icon"></button>
         </div>
         <div class="preview">
@@ -78,11 +78,11 @@
         </div>
         <div class="buttons">
           <div class="amount-btn">
-            <button id="minus">
+            <button id="minus" onclick="handleMinus()">
               <img src="images/icon-minus.svg" alt="mius icon" class="minus">
             </button>
             <span class="amount">0</span>
-            <button id="plus">
+            <button id="plus" onclick="handlePlus()">
               <img src="images/icon-plus.svg" alt="plus icon" class="minus">
             </button>
           </div>
