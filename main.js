@@ -37,7 +37,7 @@ function handlePlus() {
     amountValue++;
     amount.innerText = amountValue;
 }
-function handdleMinus() {
+function handleMinus() {
     if (amountValue > 0){
         amountValue--;
     }
