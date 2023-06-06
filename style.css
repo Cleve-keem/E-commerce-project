@@ -397,9 +397,11 @@ span.percent{
         cursor: pointer;
     }
     .nav-container{
+        position: absolute;
         padding-inline: 1rem;
-        /* z-index: 1000; */
-        /* background-color: var(--white); */
+        z-index: 1000;
+        top: 0;
+        background-color: var(--white);
     }
     img.open-menu{
         width: 14%;
@@ -480,8 +482,8 @@ span.percent{
         display: flex;
         overflow: hidden;
         min-width: 95vw;
-        margin-top: -5rem;
-        z-index: 1;
+        margin-top: 5rem;
+        /* z-index: 1; */
     }
     .mobile-thumbnail img{
         object-fit: cover;
