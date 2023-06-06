@@ -28,12 +28,10 @@ indicator.style.display = "none";
 function OpenMenu() {
     Menu.classList.add("active");
     overlay.classList.add("active");
-    alert('this button is clicked');
 }
 function CloseMenu() {
-    Menu.classList.remove("acttive");
+    Menu.classList.remove("active");
     overlay.classList.remove("active");
-    alert('this button is clicked');
 }
 function handlePlus() {
     amountValue++;
