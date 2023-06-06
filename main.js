@@ -25,11 +25,11 @@ let currentImg = 1;
 
 indicator.style.display = "none";
 
-function openMenu() {
+function OpenMenu() {
     Menu.classList.add("active");
     overlay.classList.add("active");
 }
-function closeMenu() {
+function CloseMenu() {
     Menu.classList.remove("acttive");
     overlay.classList.remove("active");
 }
