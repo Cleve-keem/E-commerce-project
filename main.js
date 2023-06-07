@@ -29,10 +29,14 @@ function OpenMenu() {
     Menu.classList.add("active");
     overlay.classList.add("active");
 }
-function CloseMenu() {
-    Menu.classList.remove("active");
-    overlay.classList.remove("active");
-}
+// function CloseMenu() {
+//     Menu.classList.remove("active");
+//     overlay.classList.remove("active");
+// }
+closeMenu.addEventListener('click', () => {
+    Menu.classList.remove('active');
+    overlay.classList.remove('active');
+})
 function handlePlus() {
     amountValue++;
     amount.innerText = amountValue;
@@ -43,4 +47,12 @@ function handleMinus() {
     }
     amount.innerText = amountValue;
 }
-
+function NextImg (){
+    if (currentImg == 4){
+        currentImg = 1;
+    }
+    else{
+        currentImg++;
+    }
+    thumbMob.src='./images/image-product-${currentImg}.jpg'
+}
