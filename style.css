@@ -115,13 +115,13 @@ img{
     border: 0;
 }
 .cart-indicator{
-    padding: 0.2rem 0.5rem;
+    padding: 0.3rem 0.4rem;
     background-color: var(--orange);
     color: var(--white);
     border-radius: 50%;
     position: absolute;
-    top: -10px;
-    right: -15px;
+    top: -2px;
+    right: 3px;
 }
 .cart-container{
     position: relative;
@@ -417,11 +417,12 @@ span.percent{
         bottom: 0;
         left: 0;
         z-index: 985;
-        gap: 1rem;
-        padding: 1rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
         margin: 0;
         flex-direction: column;
         display: none;
+        /* transition: all 0.5s ease-in; */
     }
     .overlay{
         position: absolute;
@@ -434,11 +435,17 @@ span.percent{
         opacity: 0.5;
         display: none;
         height: 100vh;
+        /* transition: all 5s ease-in-out; */
     }
     .nav-items a{
         height: fit-content;
         font-weight: 700;
         color: var(--black);
+        margin-left: 0;
+        transition: all 0.5s ease-in;
+    }
+    .nav-items li{
+        margin: 1.2rem 0;
     }
     .nav-items a:hover::after{
         display: none;
