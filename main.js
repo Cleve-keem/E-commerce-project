@@ -33,6 +33,10 @@ closeMenu.addEventListener('click', () => {
     Menu.classList.remove('active');
     overlay.classList.remove('active');
 });
+overlay.addEventListener('click', () =>{
+    Menu.classList.remove('active')
+    overlay.classList.remove('active');
+});
 function handlePlus() {
     amountValue++;
     amount.innerText = amountValue;
