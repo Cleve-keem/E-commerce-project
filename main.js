@@ -17,7 +17,7 @@ const cart = document.querySelector(".cart-container");
 const closeLIghtBtn = document.querySelector(".close-lightbox");
 const LIghtBox = document.querySelector(".lightbox");
 const addBtn = document.querySelector(".add-btn");
-const indicator = document.querySelector(".indicator");
+const indicator = document.querySelector(".cart-indicator");
 const cartMessage = document.querySelector(".cart-message-box");
 
 let amountValue = 0;
@@ -29,14 +29,10 @@ function OpenMenu() {
     Menu.classList.add("active");
     overlay.classList.add("active");
 }
-// function CloseMenu() {
-//     Menu.classList.remove("active");
-//     overlay.classList.remove("active");
-// }
 closeMenu.addEventListener('click', () => {
     Menu.classList.remove('active');
     overlay.classList.remove('active');
-})
+});
 function handlePlus() {
     amountValue++;
     amount.innerText = amountValue;

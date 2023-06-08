@@ -411,7 +411,7 @@ span.percent{
         height: 100vh;
         position: absolute;
         display: flex;
-        align-items: flex-start;
+        align-items: start;
         background-color: var(--white);
         top: 0;
         bottom: 0;
@@ -433,6 +433,7 @@ span.percent{
         z-index: 5;
         opacity: 0.5;
         display: none;
+        height: 100vh;
     }
     .nav-items a{
         height: fit-content;
